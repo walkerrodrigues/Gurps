@@ -1,0 +1,91 @@
+#include <stdio.h>
+
+void main () {
+
+int n1, custo1, n2, custo2, n3, custo3, n4, custo4;
+int st = 10; 
+int dx = 10; 
+int iq = 10; 
+int ht = 10;
+
+printf ("ST 10 (-); Incremento na ST: ");
+scanf ("%i", &n1);
+
+if (n1<1) {
+    st--;
+    custo1 = 10 * n1;
+    }
+
+if (n1>=1 && n1<4) {
+    st+=n1;
+    custo1 = 10 * n1;
+    }
+
+if (n1>=4) {
+    st+=n1;
+    custo1 = (15 * n1) - 15;
+    }
+
+printf ("DX 10 (-); Incremento na DX: ");
+scanf ("%i", &n2);
+
+if (n2<1) {
+    dx--;
+    custo2 = 10 * n2;
+    }
+
+if (n2>=1 && n2<4) {
+    dx+=n2;
+    custo2 = 10 * n2;
+    }
+
+if (n2>=4) {
+    dx+=n2;
+    custo2 = (15 * n2) - 15;
+    }
+
+printf ("IQ 10 (-); Incremento na IQ: ");
+scanf ("%i", &n3);
+
+if (n3<1) {
+    iq--;
+    custo3 = 10 * n3;
+    }
+
+if (n3>=1 && n3<4) {
+    iq+=n3;
+    custo3 = 10 * n3;
+    }
+
+if (n3>=4) {
+    dx+=n3;
+    custo3 = (15 * n3) - 15;
+    }
+
+printf ("HT 10 (-); Incremento na HT: ");
+scanf ("%i", &n4);
+
+if (n4<1) {
+    ht--;
+    custo4 = 10 * n4;
+    }
+
+if (n4>=1 && n4<4) {
+    ht+=n4;
+    custo4 = 10 * n4;
+    }
+
+if (n4>=4) {
+    ht+=n4;
+    custo4 = (15 * n4) - 15;
+    }
+
+int total_atributos = custo1 + custo2 + custo3 + custo4;
+
+printf ("\nATRIBUTOS (%i): \n", total_atributos);
+printf ("ST %i (%i)\n", st, custo1);
+printf ("DX %i (%i)\n", dx, custo2);
+printf ("IQ %i (%i)\n", iq, custo3);
+printf ("HT %i (%i)\n", ht, custo4);
+
+}
